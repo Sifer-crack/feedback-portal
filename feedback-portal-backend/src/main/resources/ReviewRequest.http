@@ -1,0 +1,12 @@
+###
+POST http://localhost:8080/api/v1/feedback-portal/review
+Content-Type: application/json
+
+{
+  "fName": "Sam",
+  "lName": "Andreev",
+  "email": "samandreev19@gmail.com",
+  "text": "Hello, this is Sam. I liked the restaurant's great service."
+}
+
+###
