@@ -8,10 +8,7 @@ import com.semionandreev.restaurant.feedbackportalbackend.request.ReviewRequest;
 import com.semionandreev.restaurant.feedbackportalbackend.response.ReviewResponse;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
-import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.ResponseStatus;
-
 @Service
 @RequiredArgsConstructor
 public class ReviewService{
@@ -46,12 +43,7 @@ public class ReviewService{
 				.build();
 	}
 	
-	@ResponseStatus(HttpStatus.BAD_REQUEST)
-	public static class ReviewAlreadySubmittedException extends RuntimeException {
-		public ReviewAlreadySubmittedException(String message) {
-			super(message);
-		}
-	}
+
 	
 }
 
